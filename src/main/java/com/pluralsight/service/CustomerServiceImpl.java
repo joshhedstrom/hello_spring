@@ -2,8 +2,14 @@ package com.pluralsight.service;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
 import com.pluralsight.model.Customer;
 import com.pluralsight.repository.CustomerRepository;
+
+@Service("customerService")
+@Scope("singleton")
 
 public class CustomerServiceImpl implements CustomerService {
 
